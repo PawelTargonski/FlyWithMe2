@@ -1,0 +1,6 @@
+[0118/191524.022:ERROR:directory_reader_win.cc(43)] FindFirstFile: Systemet finner ikke angitt bane. (0x3)
+[0119/015142.939:ERROR:process_reader_win.cc(151)] SuspendThread: Ingen tilgang. (0x5)
+[0119/015142.940:ERROR:process_reader_win.cc(151)] SuspendThread: Ingen tilgang. (0x5)
+[0119/015142.941:ERROR:process_reader_win.cc(151)] SuspendThread: Ingen tilgang. (0x5)
+[0119/015142.941:ERROR:process_reader_win.cc(123)] NtOpenThread: {Ingen tilgang.} En prosess har bedt om tilgang til et objekt, men slik tilgang er ikke innvilget. (0xc0000022)
+[0119/015143.000:ERROR:exception_snapshot_win.cc(99)] thread ID 12704 not found in process
