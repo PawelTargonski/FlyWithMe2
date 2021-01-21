@@ -1,6 +1,7 @@
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 import app from 'firebase/app';
 import 'firebase/auth';
+import 'firebase/database';
  
 const config = {
   apiKey: process.env.REACT_APP_API_KEY="AIzaSyAc8DjkX0m6BPuApi7sLI7SWxNaYcCvl6s",
@@ -16,6 +17,7 @@ class Firebase {
   constructor() {
     app.initializeApp(config);
     this.auth = app.auth();
+    this.db = app.database();
   }
   // *** Auth API ***
  
@@ -31,6 +33,12 @@ class Firebase {
  
     doPasswordUpdate = password =>
       this.auth.currentUser.updatePassword(password); 
+
+    // *** User API ***
+ 
+  user = uid => this.db.ref(`users/${uid}`);
+ 
+  users = () => this.db.ref('users');
 }
  
 export default Firebase;
