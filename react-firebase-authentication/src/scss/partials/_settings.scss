@@ -1,0 +1,39 @@
+@use "sass:map";
+
+
+
+$colors:(
+    color-primary: #F7F7F7
+
+);
+
+
+// font-family: 'Dancing Script', cursive; 400, 700
+//font-family: 'Inconsolata', monospace; 400, 700
+// font-family: 'Abel', sans-serif; 400
+
+$font-logo: "Dancing Script", cursive;
+$font-weights-logo:("regular": 400, "bold": 700);
+
+$font-header-menu:"Dancing Script", cursive;
+$font-weights-menu:("regular": 400, "bold": 700);
+
+
+@mixin logo (){
+
+    font-family: $font-logo;
+    font-size: 3rem;
+    font-weight: map-get($font-weights-logo, "bold");
+    color: map-get($colors, color-primary);
+    text-decoration: none;
+  }
+
+
+  @mixin footer (){
+
+    font-family: $font-logo;
+    font-size: 3rem;
+    font-weight: map-get($font-weights-logo, "regular");
+    color: map-get($colors, color-primary);
+    text-decoration: none;
+  }

@@ -1,0 +1,63 @@
+@use "sass:map";
+@import "_settings.scss";
+
+.Header {
+    height: 90px;
+    background: rgba(0,0,0,0.2);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: 0.5s;
+
+    .Container {
+        display: flex;
+        justify-content: space-around;
+
+        .Logo{
+            margin-left: 100px;
+            margin-top: 10px;
+            @include logo ();
+        
+        }
+    
+        .Menu {
+            height: 100%;
+
+            .MenuHeaderNavigator{
+                list-style: none;
+                padding: 0;
+                margin-top: 30;
+                display: flex;
+                align-items: center;
+                height: 100%;
+
+                .MenuHeaderList{
+                height: 100%;
+                }
+                
+                .MenuHeaderListLink{
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    text-decoration: none;
+                    color: map-get($colors, color-primary);
+                    padding: 0 40px;
+                    font-family:$font-header-menu;
+                    font-size: 1.5rem;
+                    font-weight: map-get($font-weights-menu, "bold");
+                    // text-transform: uppercase;
+                    transition: 0.5s background;
+                    margin-top: 30px;
+                }
+                
+                .MenuHeaderListLink:hover{
+                    background: rgba(255,255,255,0.2);
+                }
+            }
+        }
+       
+    }
+}

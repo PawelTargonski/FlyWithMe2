@@ -16,34 +16,61 @@ const Navigation = () => (
 );
  
 const NavigationAuth = () => (
-  <ul>
-    <li>
-      <Link to={ROUTES.LANDING}>Landing</Link>
+  <div className="Header">
+            <div className="Container">
+                <div className="Logo">
+                Fly With Me!
+                </div>
+
+  <nav class="Menu">
+  <ul class="MenuHeaderNavigator">
+  
+    <li class="MenuHeaderList">
+      <Link class="MenuHeaderListLink" to={ROUTES.LANDING}>Landing</Link>
     </li>
-    <li>
-      <Link to={ROUTES.HOME}>Home</Link>
+    
+    <li class="MenuHeaderList">
+      <Link class="MenuHeaderListLink" to={ROUTES.ACCOUNT}>Account</Link>
     </li>
-    <li>
-      <Link to={ROUTES.ACCOUNT}>Account</Link>
+    <li class="MenuHeaderList">
+      <Link class="MenuHeaderListLink" to={ROUTES.ADMIN}>Admin</Link>
     </li>
-    <li>
-      <Link to={ROUTES.ADMIN}>Admin</Link>
+    <li class="MenuHeaderList">
+      <Link class="MenuHeaderListLink" to={ROUTES.HOME}>Home</Link>
     </li>
-    <li>
+    <li class="MenuHeaderList">
       <SignOutButton />
     </li>
   </ul>
+  </nav>
+  </div> 
+</div>
 );
  
 const NavigationNonAuth = () => (
-  <ul>
-    <li>
-      <Link to={ROUTES.LANDING}>Landing</Link>
+  <div className="Header">
+            <div className="Container">
+                <div className="Logo">
+                Fly With Me!
+                </div>
+
+  <nav class="Menu">
+  <ul class="MenuHeaderNavigator">
+  
+    <li class="MenuHeaderList">
+      <Link class="MenuHeaderListLink" to={ROUTES.LANDING}>Landing</Link>
     </li>
-    <li>
-      <Link to={ROUTES.SIGN_IN}>Sign In</Link>
+    <li  class="MenuHeaderList">
+      <Link class="MenuHeaderListLink" to={ROUTES.SIGN_IN}>Sign In</Link>
     </li>
+    <li  class="MenuHeaderList">
+      <Link class="MenuHeaderListLink" to={ROUTES.HOME}>Home</Link>
+    </li>
+
   </ul>
+  </nav>
+  </div>
+  </div>
 );
  
 export default Navigation;
