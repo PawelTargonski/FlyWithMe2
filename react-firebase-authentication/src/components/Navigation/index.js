@@ -24,7 +24,9 @@ const NavigationAuth = () => (
 
   <nav class="Menu">
   <ul class="MenuHeaderNavigator">
-  
+    <li class="MenuHeaderList">
+      <Link class="MenuHeaderListLink" to={ROUTES.HOME}>Home</Link>
+    </li>
     <li class="MenuHeaderList">
       <Link class="MenuHeaderListLink" to={ROUTES.LANDING}>Landing</Link>
     </li>
@@ -32,12 +34,10 @@ const NavigationAuth = () => (
     <li class="MenuHeaderList">
       <Link class="MenuHeaderListLink" to={ROUTES.ACCOUNT}>Account</Link>
     </li>
-    <li class="MenuHeaderList">
+    {/* <li class="MenuHeaderList">
       <Link class="MenuHeaderListLink" to={ROUTES.ADMIN}>Admin</Link>
-    </li>
-    <li class="MenuHeaderList">
-      <Link class="MenuHeaderListLink" to={ROUTES.HOME}>Home</Link>
-    </li>
+    </li> */}
+    
     <li class="MenuHeaderList">
       <SignOutButton />
     </li>
@@ -56,16 +56,16 @@ const NavigationNonAuth = () => (
 
   <nav class="Menu">
   <ul class="MenuHeaderNavigator">
-  
+    <li  class="MenuHeaderList">
+      <Link class="MenuHeaderListLink" to={ROUTES.HOME}>Home</Link>
+    </li>
     <li class="MenuHeaderList">
-      <Link class="MenuHeaderListLink" to={ROUTES.LANDING}>Landing</Link>
+      <Link class="MenuHeaderListLink" to={ROUTES.LANDING}>Gallerie</Link>
     </li>
     <li  class="MenuHeaderList">
       <Link class="MenuHeaderListLink" to={ROUTES.SIGN_IN}>Sign In</Link>
     </li>
-    <li  class="MenuHeaderList">
-      <Link class="MenuHeaderListLink" to={ROUTES.HOME}>Home</Link>
-    </li>
+    
 
   </ul>
   </nav>

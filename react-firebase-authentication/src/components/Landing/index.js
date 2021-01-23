@@ -1,9 +1,14 @@
 import React from 'react';
  
-const App = () => (
-  <div>
-    <h1>Apjkcyrtfujguvkuyguikytgfkhklghp</h1>
-  </div>
-);
+const App = () => {
+
+  return(
+    <>
+    <div>
+      
+    </div>
+    </>
+  )
+  };
  
 export default App;
