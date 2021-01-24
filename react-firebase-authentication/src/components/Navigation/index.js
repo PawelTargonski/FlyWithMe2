@@ -24,11 +24,17 @@ const NavigationAuth = () => (
 
   <nav class="Menu">
   <ul class="MenuHeaderNavigator">
-    <li class="MenuHeaderList">
+  <li  class="MenuHeaderList">
       <Link class="MenuHeaderListLink" to={ROUTES.HOME}>Home</Link>
     </li>
     <li class="MenuHeaderList">
-      <Link class="MenuHeaderListLink" to={ROUTES.LANDING}>Landing</Link>
+      <Link class="MenuHeaderListLink" to={ROUTES.HISTORY}>History</Link>
+    </li>
+    <li class="MenuHeaderList">
+      <Link class="MenuHeaderListLink" to={ROUTES.SEARCH}>Search</Link>
+    </li>
+    <li  class="MenuHeaderList">
+      <Link class="MenuHeaderListLink" to={ROUTES.OPINIONS}>Opnions</Link>
     </li>
     
     <li class="MenuHeaderList">
@@ -60,7 +66,10 @@ const NavigationNonAuth = () => (
       <Link class="MenuHeaderListLink" to={ROUTES.HOME}>Home</Link>
     </li>
     <li class="MenuHeaderList">
-      <Link class="MenuHeaderListLink" to={ROUTES.LANDING}>Gallerie</Link>
+      <Link class="MenuHeaderListLink" to={ROUTES.HISTORY}>History</Link>
+    </li>
+    <li class="MenuHeaderList">
+      <Link class="MenuHeaderListLink" to={ROUTES.SEARCH}>Search</Link>
     </li>
     <li  class="MenuHeaderList">
       <Link class="MenuHeaderListLink" to={ROUTES.SIGN_IN}>Sign In</Link>
