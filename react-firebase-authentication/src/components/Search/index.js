@@ -10,7 +10,15 @@ const App = () => {
                            
         </div>
         
-      </div>
+     
+
+      <div className="ResultWindow">
+        <div className="ResultWindowContainer">
+          <h1>results</h1>
+        </div>
+        
+      </div> 
+    </div>
     </>
   )
   }

@@ -59,7 +59,11 @@ class SignInFormBase extends Component {
       <div className="Hero">
           <div className="HeroContainer">
           <h1>SignIn</h1>
-      <form onSubmit={this.onSubmit}>
+      <div className="BoardingPass">
+        <div className="BoardingPassHeader">
+          <p> <i class="fas fa-plane"></i>Boarding Pass</p>
+          </div>
+      <form onSubmit={this.onSubmit} >
         <input
           name="email"
           value={email}
@@ -80,6 +84,7 @@ class SignInFormBase extends Component {
  
         {error && <p>{error.message}</p>}
       </form>
+      </div>
       </div>
       </div>
     );
