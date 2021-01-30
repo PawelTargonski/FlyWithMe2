@@ -1,5 +1,7 @@
 import React from 'react';
- 
+import Airplanes from '../API';
+import Api from '../API';
+
 const App = () => {
 
   return(
@@ -10,7 +12,7 @@ const App = () => {
                            
         </div>
         
-     
+     <Airplanes/>
 
       <div className="ResultWindow">
         <div className="ResultWindowContainer">

@@ -7,3 +7,4 @@ export const ADMIN = '/admin';
 export const PASSWORD_FORGET = '/pw-forget';
 export const HISTORY = '/history';
 export const OPINIONS = '/opinions';
+export const AIRPLANES = '/airplanes';

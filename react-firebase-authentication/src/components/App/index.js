@@ -14,7 +14,7 @@ import AccountPage from '../Account';
 import AdminPage from '../Admin';
 import HistoryPage from '../History';
 import OpinionsPage from '../Opinions';
-
+import AirplanesPage from '../API';
  
 import * as ROUTES from '../../constants/routes';
 import { withAuthentication } from '../Session';
@@ -37,6 +37,7 @@ const App = () => (
       <Route path={ROUTES.ADMIN} component={AdminPage} />
       <Route path={ROUTES.HISTORY} component={HistoryPage}/>
       <Route path={ROUTES.OPINIONS} component={OpinionsPage}/>
+      <Route path={ROUTES.AIRPLANES} component={AirplanesPage}/>
       
     </div>
   </Router>
